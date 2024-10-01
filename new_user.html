@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User</title>
+    <link rel="icon" href= "https://static2.bigstockphoto.com/0/6/2/large2/260595031.jpg">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:burlywood;
+            font-family: Arial, sans-serif;
+        }
+
+        .Signup-container {
+            background-color:whitesmoke;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+
+            text-align:justify;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align:justify;
+        }
+
+        .input-group label {
+            display: block;         /* Ensures the label is displayed above the input */
+             margin-bottom: 5px;     /* Adds space between label and input field */
+             font-size: 16px;        /* Sets a standard font size for labels */
+             color: #333;            /* Sets label color to dark gray */
+        }
+
+        .input-group input {
+            width: 100%;            /* Makes the input field take full width of its container */
+            padding: 10px;          /* Adds padding inside the input field for better spacing */
+            border: 1px solid #ddd; /* Light gray border around the input field */
+            border-radius: 5px;     /* Rounds the corners of the input field */
+            font-size: 16px;        /* Sets a standard font size for input text */
+            box-sizing: border-box; /* Ensures padding and border are included in the input's width */
+        }
+        .input-group input:focus {
+            outline: none;          /* Removes the default focus outline */
+            border-color: #5cb85c;  /* Changes the border color when the input is focused */
+            box-shadow: 0 0 5px rgba(92, 184, 92, 0.5); /* Adds a green shadow for focus */
+        }
+        
+
+        .btn {
+            width: 100%;
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #4cae4c;
+        }
+
+        .new-user {
+            margin-top: 10px;
+        }
+
+        .new-user a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .new-user a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="Signup-container">
+        <h2>Welcome Please Signup</h2>
+        <form action="new_user.html">
+            <div class="input-group">
+                <label for="user_name">Username:</label><br>
+                <input type="text" id="user_name" name="user_name" required><br>
+            </div>
+            <div class="input-group">
+                <label for="email">Email Id:</label><br>
+                <input type="email" id="eamil" name="email" required><br>
+            </div>
+    
+            <div class="input-group">
+                <label for="name"> Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br>
+            </div>
+            <div class="input-group">
+                <label for="re_password">Re-Enter Password:</label><br>
+                <input type="password" id="re_password" name="re_password"><br>
+            </div>
+            <button type="submit" class="btn">Sign</button>
+        </form>
+        <div class ="new-user">
+        <a href="index.html">Back to login</a>
+        </div>
+    </div>
+</body>
+</html>
